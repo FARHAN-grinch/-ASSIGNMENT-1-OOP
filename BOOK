@@ -1,0 +1,87 @@
+#include <iostream>
+using namespace std;
+
+class Book
+{
+    int bookNumber;
+    string bookName;
+    float bookPrice;
+
+public:
+
+    
+    Book(int number, string name, float price)
+    {
+        bookNumber = number;
+        bookName = name;
+        bookPrice = price;
+    }
+
+    
+    void display()
+    {
+        cout << "Book Number : " << bookNumber << endl;
+        cout << "Book Name   : " << bookName << endl;
+        cout << "Book Price  : Rs. " << bookPrice << endl;
+        cout << "------------------------" << endl;
+    }
+};
+
+int main()
+{
+    int number;
+    string name;
+    float price;
+
+    
+
+    cout << "Enter details of Book 1:" << endl;
+    cout << "Enter Book Number: ";
+    cin >> number;
+    cout << "Enter Book Name: ";
+    cin >> name;
+    cout << "Enter Book Price: ";
+    cin >> price;
+
+    Book b1(number, name, price);
+
+    cout << "\nEnter details of Book 2:" << endl;
+    cout << "Enter Book Number: ";
+    cin >> number;
+    cout << "Enter Book Name: ";
+    cin >> name;
+    cout << "Enter Book Price: ";
+    cin >> price;
+
+    Book b2(number, name, price);
+
+    cout << "\nEnter details of Book 3:" << endl;
+    cout << "Enter Book Number: ";
+    cin >> number;
+    cout << "Enter Book Name: ";
+    cin >> name;
+    cout << "Enter Book Price: ";
+    cin >> price;
+
+    Book b3(number, name, price);
+
+    cout << "\nEnter details of Book 4:" << endl;
+    cout << "Enter Book Number: ";
+    cin >> number;
+    cout << "Enter Book Name: ";
+    cin >> name;
+    cout << "Enter Book Price: ";
+    cin >> price;
+
+    Book b4(number, name, price);
+
+    // Displaying all book details
+    cout << "\n\n===== BOOKSTORE DETAILS =====" << endl;
+
+    b1.display();
+    b2.display();
+    b3.display();
+    b4.display();
+
+    return 0;
+}
